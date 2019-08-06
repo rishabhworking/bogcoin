@@ -1,0 +1,26 @@
+[Unit]
+Description=BOGCOIN's distributed currency daemon
+After=network.target
+
+[Service]
+User=bogcoin
+Group=bogcoin
+
+Type=forking
+PIDFile=/var/lib/bogcoind/bogcoind.pid
+
+ExecStart=/usr/bin/bogcoind -daemon -pid=/var/lib/bogcoind/bogcoind.pid \
+          -conf=/etc/bogcoin/bogcoin.conf -datadir=/var/lib/bogcoind
+
+ExecStop=-/usr/bin/bogcoin-cli -conf=/etc/bogcoin/bogcoin.conf \
+         -datadir=/var/lib/bogcoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

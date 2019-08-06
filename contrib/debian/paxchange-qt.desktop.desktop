@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BOGcoin
+Comment=BOGcoin P2P Cryptocurrency
+Exec=bogcoin-qt %u
+Terminal=false
+Type=Application
+Icon=bogcoin128
+MimeType=x-scheme-handler/bogcoin;
+Categories=Office;Finance;
+Name[en_US]=bogcoin-qt.desktop

@@ -1,0 +1,26 @@
+# /etc/conf.d/bogcoind: config file for /etc/init.d/bogcoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/bogcoin/bogcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/bogcoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/bogcoind.pid"
+
+# Where to write bogcoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/bogcoind"
+
+# User and group to own bogcoind process
+#BITCOIND_USER="bogcoin"
+#BITCOIND_GROUP="bogcoin"
+
+# Path to bogcoind executable
+#BITCOIND_BIN="/usr/bin/bogcoind"
+
+# Nice value to run bogcoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
