@@ -116,7 +116,7 @@ public:
          
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 1000;
+        nLastPOWBlock = 43200;
         nModifierUpdateBlock = 1; // since block 1
 
         const char* pszTimestamp = "Joe Lubin, Jimmy Song Strike $500K Crypto Bet on Ethereum’s Future";
@@ -209,7 +209,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 24 * 60 * 60; // BOGCOIN: 1 day
         nTargetSpacing = 2 * 60;  // BOGCOIN: 1 minute
-        nLastPOWBlock = 200;
+        nLastPOWBlock = 1000;
         nMaturity = 10;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 1;
